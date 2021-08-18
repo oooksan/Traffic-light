@@ -23,19 +23,16 @@ class ViewController: UIViewController {
         redView.backgroundColor = UIColor.red
         orangeView.backgroundColor = UIColor.orange
         greenView.backgroundColor = UIColor.green
-        
+        redView.layer.cornerRadius = redView.frame.height/2
+        orangeView.layer.cornerRadius = orangeView.frame.height/2
+        greenView.layer.cornerRadius = greenView.frame.height/2
        
         redView.alpha = 0.3
         orangeView.alpha = 0.3
         greenView.alpha = 0.3
         
     }
-    
-    override func viewDidLayoutSubviews() {
-        redView.layer.cornerRadius = redView.frame.height/2
-        orangeView.layer.cornerRadius = orangeView.frame.height/2
-        greenView.layer.cornerRadius = greenView.frame.height/2
-    }
+
 
     @IBAction func changeLightButton(_ sender: Any) {
         if redView.alpha != 1 && orangeView.alpha != 1 && greenView.alpha != 1 {
