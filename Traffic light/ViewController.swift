@@ -16,13 +16,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         self.view.backgroundColor = UIColor.black
+        
         startButton.backgroundColor = UIColor.white
         startButton.setTitleColor(.black, for: .normal)
         startButton.layer.cornerRadius = 4
+        
         redView.backgroundColor = UIColor.red
         orangeView.backgroundColor = UIColor.orange
         greenView.backgroundColor = UIColor.green
+       
         redView.layer.cornerRadius = redView.frame.height/2
         orangeView.layer.cornerRadius = orangeView.frame.height/2
         greenView.layer.cornerRadius = greenView.frame.height/2
