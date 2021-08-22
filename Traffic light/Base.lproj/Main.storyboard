@@ -18,6 +18,10 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhM-bU-O3D" userLabel="StartButton">
                                 <rect key="frame" x="107" y="664" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="qly-N8-Ogd"/>
+                                    <constraint firstAttribute="height" constant="30" id="rsj-0m-Wjy"/>
+                                </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="changeLightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MyO-bz-s2i"/>
@@ -25,7 +29,7 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2La-AX-Q1w">
                                 <rect key="frame" x="137" y="84" width="140" height="140"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="Agc-25-fkd"/>
                                     <constraint firstAttribute="height" constant="140" id="Vxr-Uy-rj6"/>
@@ -33,7 +37,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3z-H8-W0a">
                                 <rect key="frame" x="137" y="284" width="140" height="140"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="9q0-gL-6O4"/>
                                     <constraint firstAttribute="width" constant="140" id="lgb-hm-bPQ"/>
@@ -41,7 +45,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpy-3h-uzs">
                                 <rect key="frame" x="137" y="484" width="140" height="140"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="YMv-Vk-xZt"/>
                                     <constraint firstAttribute="height" constant="140" id="YxZ-Ul-NH6"/>
@@ -49,25 +53,16 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jpy-3h-uzs" firstAttribute="top" secondItem="q3z-H8-W0a" secondAttribute="bottom" constant="60" id="2jS-PX-U7W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZhM-bU-O3D" secondAttribute="bottom" constant="43" id="4Yl-CQ-qIS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Jpy-3h-uzs" secondAttribute="trailing" constant="137" id="6aa-yV-oAZ"/>
-                            <constraint firstItem="ZhM-bU-O3D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6tz-cX-Puf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="q3z-H8-W0a" secondAttribute="trailing" constant="137" id="70R-Tw-kcf"/>
-                            <constraint firstItem="ZhM-bU-O3D" firstAttribute="top" secondItem="Jpy-3h-uzs" secondAttribute="bottom" constant="40" id="CWz-7Y-Sgw"/>
-                            <constraint firstItem="q3z-H8-W0a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G2p-Oe-UQW"/>
-                            <constraint firstItem="q3z-H8-W0a" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="Lqh-WI-ayM"/>
-                            <constraint firstItem="Jpy-3h-uzs" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="PEg-Og-eZc"/>
-                            <constraint firstItem="ZhM-bU-O3D" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="PPi-gC-PLl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ZhM-bU-O3D" secondAttribute="trailing" constant="107" id="RVZ-Ef-Fa6"/>
-                            <constraint firstItem="2La-AX-Q1w" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="V8H-rd-DUr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="2La-AX-Q1w" secondAttribute="trailing" constant="137" id="d4W-fb-V82"/>
-                            <constraint firstItem="q3z-H8-W0a" firstAttribute="top" secondItem="2La-AX-Q1w" secondAttribute="bottom" constant="60" id="fNl-s7-cj2"/>
-                            <constraint firstItem="Jpy-3h-uzs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l80-Lb-0OF"/>
-                            <constraint firstItem="2La-AX-Q1w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rSj-VC-6jV"/>
-                            <constraint firstItem="2La-AX-Q1w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="yM8-4V-nwk"/>
+                            <constraint firstItem="q3z-H8-W0a" firstAttribute="top" secondItem="2La-AX-Q1w" secondAttribute="bottom" constant="60" id="0U2-TZ-RiM"/>
+                            <constraint firstItem="Jpy-3h-uzs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDv-xu-aYE"/>
+                            <constraint firstItem="Jpy-3h-uzs" firstAttribute="top" secondItem="q3z-H8-W0a" secondAttribute="bottom" constant="60" id="IpJ-3h-oRs"/>
+                            <constraint firstItem="ZhM-bU-O3D" firstAttribute="top" secondItem="Jpy-3h-uzs" secondAttribute="bottom" constant="40" id="V2b-pg-z6x"/>
+                            <constraint firstItem="2La-AX-Q1w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ce8-4l-Hrg"/>
+                            <constraint firstItem="2La-AX-Q1w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="dPM-Fw-V69"/>
+                            <constraint firstItem="ZhM-bU-O3D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iq6-dE-yWj"/>
+                            <constraint firstItem="q3z-H8-W0a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kPH-5K-FwQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -83,11 +78,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
